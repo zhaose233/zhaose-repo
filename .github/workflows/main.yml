@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [ ffmpeg-amd-full ]
+        repos: [ ffmpeg-vulkan ]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
