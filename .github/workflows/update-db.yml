@@ -1,5 +1,7 @@
 name: update-db
 on: 
+  schedule:
+    - cron: '0 16 * * ?'
   workflow_run:
     workflows: ["build-pkgs"]
     types: [completed]
