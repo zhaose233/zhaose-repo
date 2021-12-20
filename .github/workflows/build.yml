@@ -1,0 +1,22 @@
+name: Auto Build Some Kernels
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 6 * * ?'
+jobs:
+  build:
+    strategy:
+      matrix:
+        repos: [ ffmpeg-amd-full ]
+      fail-fast: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: weiliang1503/build-aur-action@master
+        with:
+          repo-name: ${{ matrix.repos }}
+      - uses: ncipollo/release-action@v1.8.10
+        with:
+          allowUpdates: True
+          tag: "x86_64"
+          artifacts: "./*/*.zst"
+          token: ${{ secrets.GITHUB_TOKEN }}
