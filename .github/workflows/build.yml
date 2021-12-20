@@ -1,4 +1,4 @@
-name: Auto Build Some Kernels
+name: 自動に AUR からの PKG をコンパイルする
 on: 
   workflow_dispatch:
   schedule:
