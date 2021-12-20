@@ -1,4 +1,4 @@
-name: 自動に AUR からの PKG をコンパイルする
+name: build-pkgs
 on: 
   workflow_dispatch:
   schedule:
@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [ ffmpeg-vulkan ]
+        repos: [ ascii-image-converter-git ]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
