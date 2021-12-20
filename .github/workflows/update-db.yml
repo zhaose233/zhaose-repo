@@ -1,8 +1,8 @@
-name: 自動に PKG の DB を更新する
+name: update-db
 on: 
-  workflow_dispatch:
-  schedule:
-    - cron: '0 6 * * ?'
+  workflow_run:
+    workflows: ["build-pkgs"]
+    types: [completed]
 jobs:
   build:
     runs-on: ubuntu-latest
