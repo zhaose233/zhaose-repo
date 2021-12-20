@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [ ascii-image-converter-git ]
+        repos: [ ascii-image-converter-git,nginx-rtmp,linux-xanmod,qrcp,hexo-cli ]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
