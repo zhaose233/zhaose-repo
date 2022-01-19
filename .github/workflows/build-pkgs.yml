@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [ ascii-image-converter-git,nginx-rtmp,linux-xanmod,qrcp,hexo-cli,mongodb-bin,lyrebird,obsidian-2-theme-git,obsidian-icon-theme-git,freechat-git,gdm-tools-git,telegram-desktop-userfonts,appimagetool-bin ]
+        repos: [ ascii-image-converter-git,nginx-rtmp,linux-xanmod,qrcp,hexo-cli,mongodb-bin,lyrebird,obsidian-2-theme-git,obsidian-icon-theme-git,gdm-tools-git,telegram-desktop-userfonts,appimagetool-bin,nndownload ]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
