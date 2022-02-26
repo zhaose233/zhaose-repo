@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [ ascii-image-converter-git,qrcp,hexo-cli,lyrebird,obsidian-2-theme-git,obsidian-icon-theme-git,gdm-tools-git,appimagetool-bin,nndownload,gnome-shell-extension-ibus-tweaker-git,olive-git,waifu2x-converter-cpp-git,natron-compositor-git ]
+        repos: [ ascii-image-converter-git,qrcp,hexo-cli,lyrebird,obsidian-2-theme-git,obsidian-icon-theme-git,gdm-tools-git,appimagetool-bin,nndownload,gnome-shell-extension-ibus-tweaker-git,olive-git,waifu2x-converter-cpp-git,natron-compositor-git,ttf-lxgw-wenkai ]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
