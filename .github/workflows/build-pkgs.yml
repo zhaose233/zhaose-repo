@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [ ayugram-desktop,virtualbox-kvm ]
+        repos: [ rstudio-desktop ]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
