@@ -11,7 +11,7 @@ jobs:
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
-      - uses: weiliang1503/build-aur-action@master
+      - uses: zhaose233/build-aur-action@master
         with:
           repo-name: ${{ matrix.repos }}
       - uses: ncipollo/release-action@v1.8.10
