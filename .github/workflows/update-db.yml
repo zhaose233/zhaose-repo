@@ -8,7 +8,7 @@ jobs:
   dbupdate:
     runs-on: ubuntu-latest
     steps:
-    - uses: weiliang1503/update-db-for-repo@master
+    - uses: zhaose233/update-db-for-repo@master
       with:
         name: zhaose-repo
         url: 'weiliang1503/zhaose-repo'
