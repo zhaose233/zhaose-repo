@@ -1,0 +1,22 @@
+name: build-ollama
+on: 
+  workflow_dispatch:
+  schedule:
+    - cron: '0 5 * * *'
+jobs:
+  build:
+    strategy:
+      matrix:
+        repos: [ ollama-rocm-package ]
+      fail-fast: false
+    runs-on: ubuntu-latest
+    steps:
+      - uses: zhaose233/build-aur-action@ollama
+        with:
+          repo-name: ${{ matrix.repos }}
+      - uses: ncipollo/release-action@v1.8.10
+        with:
+          allowUpdates: True
+          tag: "x86_64"
+          artifacts: "./*/*.zst"
+          token: ${{ secrets.GITHUB_TOKEN }}
