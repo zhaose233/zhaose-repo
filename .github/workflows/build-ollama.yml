@@ -20,3 +20,8 @@ jobs:
           tag: "x86_64"
           artifacts: "./*/*.zst"
           token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: arch-packages
+          path: "./*/*.zst"
+          retention-days: 7  # 选择保留天数，默认为 90
