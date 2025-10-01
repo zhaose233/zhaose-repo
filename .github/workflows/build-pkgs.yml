@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [ rstudio-desktop ]
+        repos: [ llama.cpp-vulkan, 64gram-desktop-bin, valent-git, gdm-settings, sticky-notes, rewaita, gallery-dl ]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
