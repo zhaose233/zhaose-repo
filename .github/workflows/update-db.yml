@@ -11,10 +11,10 @@ jobs:
     - uses: zhaose233/update-db-for-repo@master
       with:
         name: zhaose-repo
-        url: 'weiliang1503/zhaose-repo'
+        url: 'zhaose233/zhaose-repo'
     - uses: ncipollo/release-action@v1.8.10
       with:
         allowUpdates: true
         tag: "x86_64"
-        artifacts: "./zhaose-repo.*"
+        artifacts: "./*.db.tar.gz"
         token: ${{ secrets.GITHUB_TOKEN }}
