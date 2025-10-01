@@ -16,5 +16,5 @@ jobs:
       with:
         allowUpdates: true
         tag: "x86_64"
-        artifacts: "./*.db.tar.gz"
+        artifacts: "./*/*.db.tar.gz"
         token: ${{ secrets.GITHUB_TOKEN }}
