@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [ llama.cpp-vulkan, 64gram-desktop-bin, valent-git, gdm-settings, sticky-notes, rewaita, gallery-dl, appflowy-bin, opencomic, xcaddy, halloy ]
+        repos: [ llama.cpp-vulkan, 64gram-desktop-bin, valent-git, gdm-settings, sticky-notes, rewaita, gallery-dl, appflowy-bin, opencomic, xcaddy, halloy, conceal ]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
