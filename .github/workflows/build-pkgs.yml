@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [ gdm-settings, sticky-notes, rewaita, gallery-dl, appflowy-bin, opencomic, xcaddy, conceal, rate-mirrors, chez-scheme, crmc, gamescope-git, stable-diffusion.cpp-vulkan-git, peazip, winboat ]
+        repos: [ gdm-settings, sticky-notes, rewaita, gallery-dl, appflowy-bin, opencomic, xcaddy, conceal, rate-mirrors, chez-scheme, crmc, gamescope-git, stable-diffusion.cpp-vulkan-git, peazip, leaf-git ]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
