@@ -7,7 +7,7 @@ jobs:
   build:
     strategy:
       matrix:
-        repos: [ gdm-settings, sticky-notes, gallery-dl, appflowy-bin, opencomic, conceal, rate-mirrors, peazip, gerbil-scheme]
+        repos: [ gdm-settings, sticky-notes, gallery-dl, appflowy-bin, opencomic, conceal, rate-mirrors, peazip, stable-diffusion.cpp-vulkan-git, gerbil-scheme]
       fail-fast: false
     runs-on: ubuntu-latest
     steps:
